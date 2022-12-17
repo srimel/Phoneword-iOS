@@ -1,4 +1,6 @@
-﻿using UIKit;
+﻿// Stuart Rimel, 12/17/22 Sample iOS mobile app
+
+using UIKit;
 
 namespace Phoneword2
 {
