@@ -16,10 +16,16 @@ namespace Phoneword2
 		UIKit.UIButton CallButton { get; set; }
 
 		[Outlet]
+		UIKit.UIButton CallHistoryButton { get; set; }
+
+		[Outlet]
 		UIKit.UITextField PhoneNumberText { get; set; }
 
 		[Outlet]
 		UIKit.UILabel PhonewordLabel { get; set; }
+
+		[Outlet]
+		UIKit.UINavigationItem PhonewordNavTitle { get; set; }
 
 		[Outlet]
 		UIKit.UIButton TranslateButton { get; set; }
@@ -44,6 +50,16 @@ namespace Phoneword2
 			if (TranslateButton != null) {
 				TranslateButton.Dispose ();
 				TranslateButton = null;
+			}
+
+			if (PhonewordNavTitle != null) {
+				PhonewordNavTitle.Dispose ();
+				PhonewordNavTitle = null;
+			}
+
+			if (CallHistoryButton != null) {
+				CallHistoryButton.Dispose ();
+				CallHistoryButton = null;
 			}
 		}
 	}
